@@ -5,6 +5,18 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* This removes bullet points */
+ul {
+  list-style: outside none none;
+  display: flex;
+  margin: 8px;
+  padding: 0;
+  gap: 10px;
 }
 
 img {
@@ -24,4 +36,42 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* links & anchors */
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* center this content to viewport */
+.content {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer {
+  background-color: #eee;
+  /* background-color: transparent; */
+  opacity: 0.8;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  color: grey;
 }
